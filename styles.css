@@ -9,9 +9,9 @@ body {
   h3 {
     font-family: "Maven Pro", sans-serif;
     font-weight: 700;
-  }
-  .subheading {
-    font-family: "Cormorant Infant", serif;
+}
+.subheading {
+      font-family: "Maven Pro", sans-serif;
   }
   .nav-menu {
     transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
@@ -67,4 +67,32 @@ body {
   
   .hamburger.is-open .hamburger-bottom {
     transform: rotate(-45deg) translate(6px, 6px);
+  }
+
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
